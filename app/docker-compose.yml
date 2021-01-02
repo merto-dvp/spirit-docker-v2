@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+  web:
+    build: ../app
+    #command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
+    #command: gunicorn <app_name>.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ../app/:/usr/src/app/
+      - static_volume:/home/app/web/static
+    expose:
+        - 8000
+    depends_on:
+      - db
+    env_file:
+      - ./.env.dev
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_volume:/home/app/web/static
+    ports:
+      - 8000:80
+    depends_on:
+      - web 
+volumes:
+  static_volume:

@@ -1,0 +1,4 @@
+Django>=3.0,<4.0
+psycopg2-binary>=2.8.5
+gunicorn==20.0.4
+django-spirit>=0.12.1
