@@ -57,7 +57,7 @@ Navigates to folder spirit-docker-v2/app:
 
 		cd spirit-docker-v2/app
 		
-Runs auto_install_script for fully automatic install & run app.
+Executes auto_install_script for fully automatic install & run.
 
 	sudo bash auto_install_script.sh
 	
