@@ -26,9 +26,13 @@ This application uses:
 Make sure internet connection is available.
 Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
 
-First of all Run sudo apt update
+First of all Run 
 
-Make sure Git works. If not , run sudo apt install git 
+	sudo apt update
+
+Make sure Git works. If not , 
+
+	run sudo apt install git 
 
 Clone the main repository from GitHub:
 
