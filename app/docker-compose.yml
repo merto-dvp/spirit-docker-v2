@@ -2,7 +2,7 @@ version: "2"
 services:
   nginx:
     image: nginx:latest
-    container_name: NGINXDOCKERNAME2
+    container_name: NGINX-CONTAINER
     ports:
       - "8000:8000"
     volumes:
@@ -13,7 +13,7 @@ services:
       - web
   web:
     build: .
-    container_name: DJANGOXDOCKERNAME2
+    container_name: DJANGO-CONTAINER
     command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn mysite.wsgi -b 0.0.0.0:8000"
     depends_on:
       - db
@@ -31,4 +31,4 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
-    container_name: PSQLDOCKERNAME2
+    container_name: PSQL-CONTAINER
