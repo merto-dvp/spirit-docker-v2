@@ -94,7 +94,7 @@ or
 for initilazing Docker & Database.
 
 
-# For Creating Admin Account, You can run:
+<b>For Creating Admin Account, You can run:<b>
 
 	sudo docker-compose run web python3 manage.py createsuperuser 
 	
@@ -104,7 +104,7 @@ And run
 
 to run app.
 
-# App will run at http://<IP_address>:8000
+<b> App will run at http://<IP_address>:8000 <b>
 
 
 # Manual Installation
