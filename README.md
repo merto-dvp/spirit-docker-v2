@@ -5,50 +5,17 @@ Created by Mert Okumuş (merto-dvp)
 
 Project Information: 
 This application uses:
-•	Django
 
-•	nitely/Spirit, a Python based forum built using the Django framework. For further information: https://spirit.readthedocs.io/en/latest/
+	•Django
+	•nitely/Spirit, a Python based forum built using the Django framework. For further information: https://spirit.readthedocs.io/en/latest/
+	•Docker, a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. For further information: https://docs.docker.com/
+	•NGINX, a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. For further information: https://docs.nginx.com/
+	•gunicorn, a Python WSGI HTTP Server for UNIX. For further information: https://docs.gunicorn.org/en/stable/
+	•Bash,  a Unix shell and command language. For further information: https://devdocs.io/bash/
 
-•	Docker, a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. For further information: https://docs.docker.com/
 
-•	NGINX, a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. For further information: https://docs.nginx.com/
 
-•	gunicorn, a Python WSGI HTTP Server for UNIX. For further information: https://docs.gunicorn.org/en/stable/
-
-•	Bash,  a Unix shell and command language. For further information: https://devdocs.io/bash/
-Project Folder:
-── spirit-docker-v2  (Main GitHub Repository / https://github.com/merto-dvp/spirit-docker-v2 )
-─README.md (Readme & Tutorial)
-─app
-    |─ config 
-    |  	 ── nginx
-    |	      ── Dockerfile (Docker config for nginx)
-    |                 ── nginx.conf (nginx server config, Server Ports)  
-    |─ src
-    |   	── static  (Static files for Django/Spirit)
-    |        		── admin 
-    |        		── spirit   
-    |─ mysite (Default app folder for Spirit, You can change it)
-    |       	── settings
-    |		── base.py 
-    |		── dev.py  (Main settings for application, DATABASE, DEBUG, SECRET_KEY, ALLOWED_HOSTS)
-    |		── prod.py
-    |		── test.py
-    |           ── celery.py
-    |           ── urls.py
-    |           ── wsgi.py
-    | ── after_settings_script.sh ( Script for saving changes made in settings folder.)
-    | ── cleanup_script.sh	  ( Script for cleaning folder, making it ready for new app)
-    | ── docker-compose.yml    ( Settings for Docker-compose & containers, DJANGO, NGINX,DATABASE(POSTGRE))
-    | ── Dockerfile		  ( Settings for Docker)	
-    | ── env.dev		  ( File for easier changes on DEBUG, SECRET_KEY, ALLOWED_HOSTS (dev.py))
-    | ── install_script.sh   ( Start point /Main installation script, Installs required packages for Docker, Python etc)
-    | ── manual_install_script.sh (Script for manual installation of Spirit/ Read Manual Installation Guide for details)
-    | ── requirements.txt (Contains package names for required resources)
-    | ── spirit_install_app_script.sh  (Script for installing default (boilerplate) project from GitHub repo/
-        Asks for permission  / https://github.com/merto-dvp/django-spirit-ready-app )
-
-Installation & Run 
+# Installation & Run 
 
 Make sure internet connection is available.
 Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
