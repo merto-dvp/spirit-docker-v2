@@ -19,8 +19,9 @@ do
  sudo mv django-spirit-ready-app/* .
  sudo rm -rf django-spirit-ready-app
  echo ""
+ sudo docker-compose down
  echo "Spirit app <mysite> is ready to serve."
- echo "Run  <sudo docker-compose up> to run application."
+ echo "Run  <sudo docker-compose up --build> to run application."
  break
  ;;
      [nN][oO]|[nN])
