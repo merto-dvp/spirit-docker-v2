@@ -4,7 +4,13 @@ Docker-ready Spirit/Django Application.
 
 Ready to serve with Docker and configured by nginx, gunicorn & PostgreSQL.
 
-Watch the demo for auto installation on AWS EC2 ! YouTube: https://www.youtube.com/watch?v=d25pYq3LmvQ
+Watch the demo for auto installation on AWS EC2 ! 
+
+	YouTube: https://www.youtube.com/watch?v=d25pYq3LmvQ
+Watch the demo for slightly slower and input required installation on AWS EC2 ! 
+
+	YouTube: https://www.youtube.com/watch?v=bhw9LT-W9ak
+	
 
 # Project Information: 
 
