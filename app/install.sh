@@ -41,7 +41,7 @@ sudo groupadd docker
 sudo chown -R $USER:$USER .
 sudo usermod -aG docker $USER
 #newgrp docker
-bash spirit_init.sh
+#bash spirit_init.sh
 
 
 exit
