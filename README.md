@@ -87,7 +87,9 @@ for initilazing Docker & Database.
 # For Creating Admin Account, You can run:
 
 	sudo docker-compose run web python3 manage.py createsuperuser 
+Run sudo docker-compose up to serve app.
 
+# App will run at http://<IP_address>:8000
 
 
 # Manual Installation
@@ -105,8 +107,6 @@ After running script it will ask you to choose a project folder name for creatin
  
 
 After successful creation and setting folders,
-
- 
 
 
 Now you have to configure Docker & Spirit app.
