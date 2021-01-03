@@ -1,7 +1,6 @@
 # django-docker-install
 
 Docker-ready Spirit/Django Application
-Created by Mert Okumuş (merto-dvp)
 
 # Project Information: 
 
