@@ -45,6 +45,6 @@ clear
 echo " "
 echo "Installed Docker and requirements successfully."
 
-bash spirit-install-app.sh
+bash spirit_install_app_script.sh
 
 exit
