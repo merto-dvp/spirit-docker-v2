@@ -75,6 +75,20 @@ After running this script, it is going to run Docker configurations and serve th
 
 If you don’t want to install default project, you can skip this by (N n) or Ctrl-C.
 
+Run project once with:
+
+	docker-compose up
+or
+
+	sudo docker-compose run web python3 manage.py migrate
+	
+for initilazing Docker & Database.
+
+
+# For Creating Admin Account, You can run:
+
+	sudo docker-compose run web python3 manage.py createsuperuser 
+
 
 
 # Manual Installation
@@ -209,7 +223,8 @@ After all, simply run after_settings_script.sh :
 This will configure Docker containers again and will serve the application.
 Also you can run the <docker-compose up> command to serve application at any time.
 
-Congratulations, your app works at http://<IP_address>:8000 !
+
+# Congratulations, your app works at http://<IP_address>:8000 !
 
 
  
