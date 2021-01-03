@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#This script loads https://github.com/merto-dvp/django-spirit-ready-app on permission
+
 echo "Do you want to install a ready to serve project for Spirit?";
 echo "It is ready to serve with Docker and will be downloaded from GitHub.";
 echo "This will set Django(Spirit) app name as <mysite>.";
