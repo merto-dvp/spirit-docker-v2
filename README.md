@@ -32,27 +32,27 @@ Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machi
 
 First of all Run 
 
-	sudo apt update
+		sudo apt update
 
 Make sure Git works. If not , 
 
-	run sudo apt install git 
+		run sudo apt install git 
 
 Clone the main repository from GitHub:
 
 Run:
 
-	   git clone https://github.com/merto-dvp/spirit-docker-v2
+		git clone https://github.com/merto-dvp/spirit-docker-v2
 
 Navigate to folder spirit-docker-v2/app:
 
 Run:
 
-	cd spirit-docker-v2/app
-	
+		cd spirit-docker-v2/app
+		
 Run auto_install_script for fully automatic install & run app.
 
-	sudo base auto_install_script.sh
+	sudo bash auto_install_script.sh
 	
 Run install_script.sh to start:
 
