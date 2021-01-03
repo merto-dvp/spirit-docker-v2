@@ -65,7 +65,7 @@ This project is made with default installation guide: https://github.com/nitely/
 
 It is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
 
-Project name will be set to <mysite>. App folder is configured to run mysite project as default.
+Project name will be set to mysite. App folder is configured to run mysite project as default.
 
 Run sudo docker-compose run web python3 manage.py createsuperuser for creating an admin account.
 
@@ -113,9 +113,9 @@ Now you have to configure Docker & Spirit app.
 
 For changing database and using advantages of app/env.dev file (ALLOWED_HOSTS,DEBUG,SECRET_KEY),change settings in projects settings folder.
 
-For changing it, go to your (Django/Spirit) project folder (<mysite> for default)
+For changing it, go to your (Django/Spirit) project folder (mysite for default)
 
-<project_folder>/settings/dev.py
+	project_folder/settings/dev.py
 
 And use a text editor to edit dev.py. (Use sudo if required)
 
@@ -193,7 +193,8 @@ settings easily in this file.
 
  
 
-After changing settings and using with Docker, you also need to change NGINX and gunicorn settings. Because for default, they're set to work with <mysite> project folder name.
+After changing settings and using with Docker, you also need to change NGINX and gunicorn settings. Because for default, they're set to work with 
+mysite project folder name.
 
 For NGINX settings:
 
