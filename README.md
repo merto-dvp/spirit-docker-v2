@@ -1,6 +1,6 @@
 # django-docker-install
 
-Docker-ready Spirit/Django Application. 
+Docker-ready scripts for Spirit/Django Application. 
 
 Ready to serve with Docker and configured by nginx, gunicorn & PostgreSQL.
 
