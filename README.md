@@ -50,6 +50,10 @@ Run:
 
 	cd spirit-docker-v2/app
 	
+Run auto_install_script for fully automatic install & run app.
+
+	sudo base auto_install_script.sh
+	
 Run install_script.sh to start:
 
 	sudo bash install_script.sh
