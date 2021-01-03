@@ -32,14 +32,17 @@ First of all Run sudo apt update
 Make sure Git works. If not , run sudo apt install git 
 
 Clone the main repository from GitHub:
-	Run:
+
+Run:
+
 	   git clone https://github.com/merto-dvp/spirit-docker-v2
 
 Navigate to folder spirit-docker-v2/app:
 
 Run:
-                       cd spirit-docker-v2/app
 
+	cd spirit-docker-v2/app
+	
 Run install_script.sh to start:
 
 	sudo bash install_script.sh
