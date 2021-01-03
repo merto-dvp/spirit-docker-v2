@@ -30,43 +30,34 @@ This application uses:
 Make sure internet connection is available.
 Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
 
-First of all Run 
+<b> Auto installation command:<b>
+	
+	git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
+	
 
-		sudo apt update
+This script does:
 
-Make sure Git works. If not , 
-Run:
-		sudo apt install git 
-
-Clone the main repository from GitHub:
+Clones the main repository from GitHub:
 
 Run:
 
 		git clone https://github.com/merto-dvp/spirit-docker-v2
 
-Navigate to folder spirit-docker-v2/app:
+Navigates to folder spirit-docker-v2/app:
 
 Run:
 
 		cd spirit-docker-v2/app
 		
-Run auto_install_script for fully automatic install & run app.
+Runs auto_install_script for fully automatic install & run app.
 
 	sudo bash auto_install_script.sh
 	
-Run install_script.sh to start:
 
-	sudo bash install_script.sh
+Wait until script install everything. If docker hello-world app works, App folder & Docker are ready to serve.
 
-Wait until script loads everything. If docker hello-world app works, App folder & Docker are ready to serve.
 
-This will run another script  spirit_install_app_script.sh .
-
-This script asks for your permission to install default project hosted on GitHub repo.
-
- 
-
-This project is made with default installation guide: https://github.com/nitely/Spirit
+Auto created project is made with default installation guide: https://github.com/nitely/Spirit
 
 	pip install django-spirit
 	spirit startproject mysite
@@ -79,20 +70,7 @@ It is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
 
 Project name will be set to mysite. App folder is configured to run mysite project as default.
 
-After running this script, it is going to run Docker configurations and serve the application at 0.0.0.0:8000.
-
-
-If you don’t want to install default project, you can skip this by (N n) or Ctrl-C.
-
-Run project once with:
-
-	docker-compose up
-or
-
-	sudo docker-compose run web python3 manage.py migrate
-	
-for initilazing Docker & Database.
-
+After running this script, it is going to run Docker configurations and serve the application at 0.0.0.0:8000
 
 <b>For Creating Admin Account, You can run:<b>
 
@@ -104,7 +82,7 @@ And run
 
 to run app.
 
-<b> App will run at http://<IP_address>:8000 <b>
+<b> App will run at http://<IP_address>:8000 as default.<b>
 
 
 # Manual Installation
