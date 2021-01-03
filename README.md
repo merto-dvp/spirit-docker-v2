@@ -88,7 +88,7 @@ to run app.
 
 # Manual Installation
 
-If you don’t want to install default project, you can run this script. But you have to configure the project by yourself. Use sudo if you get permission denied or related errors.
+If you don’t want to install default project or don't want to be automated, you can run this script. But you have to configure the project by yourself. Use sudo if you get permission denied or related errors.
 
 Script: 
 
