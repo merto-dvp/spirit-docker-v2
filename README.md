@@ -3,15 +3,22 @@
 Docker-ready Spirit/Django Application
 Created by Mert Okumuş (merto-dvp)
 
-Project Information: 
+# Project Information: 
+
 This application uses:
 
 	•Django
+	
 	•nitely/Spirit, a Python based forum built using the Django framework. For further information: https://spirit.readthedocs.io/en/latest/
+	
 	•Docker, a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. For further information: https://docs.docker.com/
+	
 	•NGINX, a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. For further information: https://docs.nginx.com/
+	
 	•gunicorn, a Python WSGI HTTP Server for UNIX. For further information: https://docs.gunicorn.org/en/stable/
+	
 	•Bash,  a Unix shell and command language. For further information: https://devdocs.io/bash/
+	
 
 
 
@@ -25,8 +32,8 @@ First of all Run sudo apt update
 Make sure Git works. If not , run sudo apt install git 
 
 Clone the main repository from GitHub:
-Run:
-                       git clone https://github.com/merto-dvp/spirit-docker-v2
+	Run:
+	   git clone https://github.com/merto-dvp/spirit-docker-v2
 
 Navigate to folder spirit-docker-v2/app:
 
