@@ -1,4 +1,5 @@
-sudo chown -R $USER:$USER .
+#Cleans the project folder.
+
 echo "Running folder cleanup script."
 sudo rm -rf manage.py
 sudo rm -rf src/*
