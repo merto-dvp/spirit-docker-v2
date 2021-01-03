@@ -4,7 +4,7 @@
 FROM python:3
 
 # set work directory
-WORKDIR /.
+WORKDIR ./
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
