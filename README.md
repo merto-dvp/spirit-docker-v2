@@ -2,6 +2,10 @@
 
 Docker-ready scripts for Spirit/Django Application. 
 
+Check out documentation too !
+
+	https://github.com/merto-dvp/spirit-docker-v2/blob/main/Installation%26Run%20Guide.pdf
+
 Ready to serve with Docker and configured by nginx, gunicorn & PostgreSQL.
 
 Watch the demo for auto installation on AWS EC2 ! 
