@@ -39,13 +39,10 @@ This script does:
 
 Clones the main repository from GitHub:
 
-Run:
-
 		git clone https://github.com/merto-dvp/spirit-docker-v2
 
 Navigates to folder spirit-docker-v2/app:
 
-Run:
 
 		cd spirit-docker-v2/app
 		
@@ -53,9 +50,6 @@ Runs auto_install_script for fully automatic install & run app.
 
 	sudo bash auto_install_script.sh
 	
-
-Wait until script install everything. If docker hello-world app works, App folder & Docker are ready to serve.
-
 
 Auto created project is made with default installation guide: https://github.com/nitely/Spirit
 
@@ -66,7 +60,7 @@ Auto created project is made with default installation guide: https://github.com
 	python manage.py createsuperuser
 	python manage.py runserver
 
-It is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
+And it is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
 
 Project name will be set to mysite. App folder is configured to run mysite project as default.
 
