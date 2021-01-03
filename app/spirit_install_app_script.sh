@@ -20,11 +20,6 @@ sudo rm -rf django-spirit-ready-app/.git;
 sudo mv django-spirit-ready-app/* .;
 sudo rm -rf django-spirit-ready-app;
 
-echo "";
-echo "Create an admin account for project:"
-echo ""
-sudo docker-compose run web python3 manage.py createsuperuser
-echo ""
 
 echo "Spirit app <mysite> is ready to serve.";
 echo "Run  <sudo docker-compose up> to run application.";
