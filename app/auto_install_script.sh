@@ -42,5 +42,3 @@ echo "";
 echo "Spirit app <mysite> is ready to serve.";
 echo "Now running  <sudo docker-compose up> to serve.";
 sudo docker-compose up;
-
-
