@@ -34,12 +34,13 @@ Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machi
 	
 	git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
 	
-
-This script does:
+<b> <b>	
+This script:
 
 Clones the main repository from GitHub:
 
 		git clone https://github.com/merto-dvp/spirit-docker-v2
+
 
 Navigates to folder spirit-docker-v2/app:
 
