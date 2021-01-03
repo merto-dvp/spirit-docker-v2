@@ -35,8 +35,8 @@ First of all Run
 		sudo apt update
 
 Make sure Git works. If not , 
-
-		run sudo apt install git 
+Run:
+		sudo apt install git 
 
 Clone the main repository from GitHub:
 
