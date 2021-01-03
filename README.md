@@ -67,8 +67,6 @@ It is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
 
 Project name will be set to mysite. App folder is configured to run mysite project as default.
 
-Run sudo docker-compose run web python3 manage.py createsuperuser for creating an admin account.
-
 After running this script, it is going to run Docker configurations and serve the application at 0.0.0.0:8000.
 
 
@@ -87,7 +85,12 @@ for initilazing Docker & Database.
 # For Creating Admin Account, You can run:
 
 	sudo docker-compose run web python3 manage.py createsuperuser 
-Run sudo docker-compose up to serve app.
+	
+And run
+
+	sudo docker-compose up 
+
+to run app.
 
 # App will run at http://<IP_address>:8000
 
