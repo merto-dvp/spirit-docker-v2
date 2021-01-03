@@ -56,12 +56,13 @@ This script asks for your permission to install default project hosted on GitHub
  
 
 This project is made with default installation guide: https://github.com/nitely/Spirit
-pip install django-spirit
-spirit startproject mysite
-cd mysite
-python manage.py spiritinstall
-python manage.py createsuperuser
-python manage.py runserver
+
+	pip install django-spirit
+	spirit startproject mysite
+	cd mysite
+	python manage.py spiritinstall
+	python manage.py createsuperuser
+	python manage.py runserver
 
 It is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
 
@@ -76,12 +77,13 @@ If you don’t want to install default project, you can skip this by (N n) or Ct
 
 
 
-Manual Installation
+# Manual Installation
 
 If you don’t want to install default project, you can run this script. But you have to configure the project by yourself. Use sudo if you get permission denied or related errors.
 
-      Script: 
-sudo bash manual_install_script.sh
+Script: 
+
+	sudo bash manual_install_script.sh
 
 This script will clean up & config the app folder. Then will install default Spirit/Django app with SQLite3 database and default settings. It will run default installation guide instructions to build up project. https://github.com/nitely/Spirit.
 
@@ -115,15 +117,16 @@ to dev.py.
 
 
 
-After that,
+After that, overwrite DEBUG=True to :
 
-Overwrite DEBUG=True to :
 	DEBUG = int(os.environ.get("DEBUG", default=0))
 
 Overwrite SECRET_KEY = "DEV" to :
+
 	SECRET_KEY = os.environ.get("SECRET_KEY")
 
 Overwrite ALLOWED_HOSTS = ['127.0.0.1', ] to :
+
 	ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 
@@ -137,29 +140,29 @@ For changing database :
 
 Overwrite default DATABASE settings :
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+	DATABASES = {
+	    'default': {
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	    }
+	}
 to:
 
-DATABASES = {
-    'default_old': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
-    }
-}
- 
+	DATABASES = {
+	    'default_old': {
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	    },
+	    'default': {
+		'ENGINE': 'django.db.backends.postgresql',
+		'NAME': 'postgres',
+		'USER': 'postgres',
+		'PASSWORD': 'postgres',
+		'HOST': 'db',
+		'PORT': 5432,
+	    }
+	}
+
 
 Now you can use PostgreSQL.
 
@@ -189,15 +192,18 @@ For gunicorn settings:
 For running app you need to configure gunicorn settings. Edit app/docker-compose.yml with a text editor:
 
 Change & overwrite gunicorn mysite.wsgi to:
+
 	gunicorn <project_name>.wsgi
 
-command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn <project_name>.wsgi -b 0.0.0.0:8000"
+
+	command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn <project_name>.wsgi -b 0.0.0.0:8000"
 	
 	
  
 
 You can configure Docker-compose settings here.
 After all, simply run after_settings_script.sh :
+
 	bash after_settings_script.sh
 
 This will configure Docker containers again and will serve the application.
