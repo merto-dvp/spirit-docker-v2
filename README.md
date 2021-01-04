@@ -20,7 +20,7 @@ Watch the demo for slightly slower and input required installation on AWS EC2 !
 
 This application uses:
 
-	•Django
+	•Django, a Python-based free and open-source web framework that follows the model-template-views architectural pattern. 
 	
 	•nitely/Spirit, a Python based forum built using the Django framework. For further information: https://spirit.readthedocs.io/en/latest/
 	
