@@ -2,7 +2,7 @@
 
 Docker-ready scripts for Spirit/Django Application. 
 
-Check out documentation too !
+Check out the documentation too !
 
 	https://github.com/merto-dvp/spirit-docker-v2/blob/main/Installation%26Run%20Guide.pdf
 
