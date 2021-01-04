@@ -71,7 +71,7 @@ Auto created project is made with default installation guide: https://github.com
 	python manage.py createsuperuser
 	python manage.py runserver
 
-And it is hosted on GitHub: https://github.com/merto-dvp/django-spirit-ready-app
+And it is also hosted on GitHub!: https://github.com/merto-dvp/django-spirit-ready-app
 
 Project name will be set to mysite. App folder is configured to run mysite project as default.
 
