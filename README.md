@@ -1,4 +1,4 @@
-# django-docker-install
+# Spirit/Django Docker-ready Installer
 
 Docker-ready scripts for Spirit/Django Application. 
 
