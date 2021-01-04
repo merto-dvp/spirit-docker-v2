@@ -38,7 +38,7 @@ This application uses:
 # Installation & Run 
 
 Make sure internet connection is available.
-Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
+Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
 
 <b> Auto installation & run command: (No inputs required! , Make sure port:8000 is accessible)</b>
 	
