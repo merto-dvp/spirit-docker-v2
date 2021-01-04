@@ -42,7 +42,7 @@ Works on Ubuntu 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machi
 
 <b> Auto installation & run command: (No inputs required! , Make sure port:8000 is accessible)</b>
 	
-	git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
+	sudo apt install git && git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
 		
 # What does this script do ?:
 
