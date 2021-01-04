@@ -76,7 +76,7 @@ Project name will be set to mysite. App folder is configured to run mysite proje
 
 After running this script, it is going to run Docker configurations and serve the application at 0.0.0.0:8000
 
-<b>For Creating Admin Account, You can run:<b>
+<b>For Creating Admin Account, You can run:</b>
 
 	sudo docker-compose run web python3 manage.py createsuperuser 
 	
@@ -86,7 +86,7 @@ And run
 
 to run app.
 
-<b> App will run at http://<IP_address>:8000 as default.<b>
+<b> App will run at http://<IP_address>:8000 as default.</b>
 
 
 # Manual Installation
