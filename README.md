@@ -34,8 +34,9 @@ This application uses:
 Make sure internet connection is available.
 Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
 
-<b>(Not Required! You can use this if you installed Spirit project and want a clean folder )
-This command & script cleans up project folder and makes it ready to development (No installs, just Docker)</b>
+<b>(Not Required! You can use this command if you installed Spirit project and want a clean folder ) </b>
+
+<b> This command & script cleans up project folder and makes it ready to development (No installs, just Docker)</b>
 
 	sudo bash cleanup_script.sh
 
