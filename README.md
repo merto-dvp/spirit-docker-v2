@@ -34,11 +34,18 @@ This application uses:
 Make sure internet connection is available.
 Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
 
+<b>(Not Required! You can use this if you installed Spirit project and want a clean folder )
+This command & script cleans up project folder and makes it ready to development (No installs, just Docker)</b>
+
+	sudo bash cleanup_script.sh
+
 <b> Auto installation & run command: (No inputs required! , Make sure port:8000 is accessible)</b>
 	
 	sudo apt install git -y && git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
-		
-# What does this script do ?:
+
+
+			
+# What does this command do ?:
 
 Clones the main repository from GitHub:
 
