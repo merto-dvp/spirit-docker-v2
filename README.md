@@ -31,10 +31,12 @@ This application uses:
 
 # Installation & Run 
 
-Make sure internet connection is available.
-Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtual machines)
+<b> This project folder is ready to run Spirit applications. You can learn how to install your project by <b> Manual Installation </b> section below. (You might need to run scripts.)</b>
 
-<b>(Not Required! You can use this command if you installed Spirit project and want a clean & ready folder ) </b>
+Make sure internet connection is available.
+Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2)
+
+<b>(NOT REQUIRED! You can use this command if you installed Spirit project before and want a clean & ready folder ) </b>
 
 <b> This command & script cleans up project folder and makes it ready to development (No installs, just Docker)</b>
 
@@ -46,19 +48,23 @@ Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2 virtua
 
 
 			
-# What does this command do ?:
+# What does this auto installation commands & scripts do ?:
 
 Clones the main repository from GitHub:
 
-		git clone https://github.com/merto-dvp/spirit-docker-v2
+	git clone https://github.com/merto-dvp/spirit-docker-v2
 
 
 Navigates to folder spirit-docker-v2/app:
 
 
-		cd spirit-docker-v2/app
+	cd spirit-docker-v2/app
 		
-Executes auto_install_script for fully automatic install & run.
+Cleans up the project folder with cleanup_script.sh
+
+	sudo bash cleanup_script.sh
+	
+Executes auto_install_script for fully automatic application install & run.
 
 	sudo bash auto_install_script.sh
 	
@@ -74,7 +80,7 @@ Auto created project is made with default installation guide: https://github.com
 
 And it is also hosted on GitHub!: https://github.com/merto-dvp/django-spirit-ready-app
 
-Project name will be set to mysite. App folder is configured to run mysite project as default.
+Project name will be set to <b>mysite</b>. App folder is configured to run mysite project as default.
 
 After running this script, it is going to run Docker configurations and serve the application at 0.0.0.0:8000
 
