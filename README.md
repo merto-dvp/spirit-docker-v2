@@ -43,9 +43,9 @@ Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2)
 	sudo bash cleanup_script.sh
 
 # Auto installation & run command: 
-No inputs required! , Make sure port:8000 is accessible
+No inputs required. Make sure port:8000 is accessible.
 	
-	sudo apt install git -y && git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
+	sudo apt update && sudo apt install git -y && git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
 
 
 			
@@ -202,16 +202,16 @@ settings easily in this file.
 After changing settings and using with Docker, you also need to change NGINX and gunicorn settings. Because for default, they're set to work with 
 mysite project folder name.
 
-For NGINX settings:
+<b>For NGINX settings:</b>
 
 	cd config/nginx/
 	sudo nano nginx.conf
 
-For gunicorn settings:
+<b>For gunicorn settings:</b>
 
 For running app you need to configure gunicorn settings. Edit app/docker-compose.yml with a text editor:
 
-Change & overwrite gunicorn mysite.wsgi to:
+<b>Change & overwrite gunicorn mysite.wsgi to:</b>
 
 	gunicorn <project_name>.wsgi
 
@@ -222,7 +222,8 @@ Change & overwrite gunicorn mysite.wsgi to:
  
 
 You can configure Docker-compose settings here.
-After all, simply run after_settings_script.sh :
+
+<b> After configuration, simply run after_settings_script.sh :</b>
 
 	bash after_settings_script.sh
 
