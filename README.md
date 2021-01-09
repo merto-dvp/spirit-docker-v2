@@ -42,7 +42,8 @@ Works on Ubuntu Server 20.04 LTS, (Tested on Microsoft Azure & Amazon EC2)
 
 	sudo bash cleanup_script.sh
 
-<b> Auto installation & run command: (No inputs required! , Make sure port:8000 is accessible)</b>
+# Auto installation & run command: 
+No inputs required! , Make sure port:8000 is accessible
 	
 	sudo apt install git -y && git clone https://github.com/merto-dvp/spirit-docker-v2 && cd spirit-docker-v2/app  && bash auto_install_script.sh
 
