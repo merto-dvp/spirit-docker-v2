@@ -28,7 +28,7 @@ services:
   db:
     image: postgres:latest
     volumes:
-      - postgres_data:./postgres_data   
+      - postgres_data:/var/lib/postgresql/data  
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -36,3 +36,4 @@ services:
     container_name: PSQL-CONTAINER
 volumes:
     postgres_data:
+     external: true
