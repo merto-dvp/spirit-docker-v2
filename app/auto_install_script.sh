@@ -57,5 +57,8 @@ echo "";
 echo "Spirit app <mysite> is ready to serve.";
 echo "Now running  <sudo docker-compose up> to serve.";
 
+#Create database volume
+sudo docker volume create --name=postgres_data
+
 #Run application on docker
 sudo docker-compose up;
